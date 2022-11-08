@@ -44,13 +44,13 @@ body{
   background-size: contain;
   background-repeat: no-repeat;
   background-size:cover;
-  background-position:  center;
+  background-position:  center bottom -55px;
   position: relative;
 }
 .header-image::before{
   content:"";
   position: absolute;
-  background: rgba(41, 45, 51, 0.6);
+  background: rgba(41, 45, 51, 0.75);
   top:0;
   left: 0;
   width: 100%;
@@ -103,6 +103,7 @@ body{
 .navbar-button{
   flex-shrink: 0;
   height: 100%;
+  padding: 25px 50px;
 }
 .header-button{
   height: 100%;
@@ -127,6 +128,8 @@ body{
   font-size: 80px;
   line-height: 120%;
   margin: 30px 0;
+  letter-spacing: 0.8px;
+  word-spacing: -1.6px;
 }
 .header-text{
   max-width: 720px;
@@ -149,12 +152,18 @@ body{
   font-weight: 400;
   font-size: 16px;
   line-height: 160%;
-
+  margin-bottom: 0;
+  margin-top: 18px;
+}
+.header-button{
+  padding: 30px 50px;
 }
 .header-features-item{
-  padding: 30px 50px;
+  padding: 28px 50px;
+  width: 288px;
   border: 1px solid rgba(235, 235, 240, 0.2);
 }
+
 .header-features-item:not(:last-child){
   border-right: none;  
 }
