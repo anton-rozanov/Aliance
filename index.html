@@ -11,12 +11,67 @@
     rel="stylesheet"/>
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/normalize.css">
-   
-   
    <title>Aliance Production</title>
  </head>
  <body>
+  <div class="mobile-menu">
+    <ul class="mobile-menu-nav">
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">О компании</a>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">Контрактное производство</a>
+        <ul class="mobile-submenu">
+          <li class="mobile-submenu-item">
+            <a class="mobile-submenu-link" href="#">Автомобильная химия</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a  class="mobile-submenu-link" href="#">Бытовая химия</a>
+          </li>
+          <li class="mobile-submenu-item">
+            <a  class="mobile-submenu-link" href="#">Дезинфицирующие средства</a>
+          </li>
+        </ul>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">Собственные торговые марки</a>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">Новости</a>
+      </li>
+      <li class="mobile-menu-nav-item">
+        <a href="#" class="mobile-menu-link">Контакты</a>
+      </li>
+     </ul>
+     <a href="tel:+74996861014" class="mobile-phone">+7 (499) 686-10-14</a>
+     <div class="mobile-info">
+      <svg class="phone-icon " width="24" height="24">
+        <use href="img/sprite.svg#phone"></use>
+      </svg>
+      <address class="mobile-info-address">
+        г.Москва, Холодильный пер.,4к1с8
+         
+      </address>
+     </div>
+     <div class="mobile-info">
+      <svg class="phone-icon " width="24" height="24">
+        <use href="img/sprite.svg#phone"></use>
+      </svg>
+      <a href="mailto:tavermaaa@mail.ru" class="mobile-info-email">
+        tavermaaa@mail.ru
+         
+      </a>
+     </div>
+     
+     <!-- /.mobile-info -->
+  </div>
+
   <nav class="navbar">
+    <a href="#" class="mobile-menu-toggle">
+      <div class="mobile-menu-line"></div>
+      <div class="mobile-menu-line"></div>
+      <div class="mobile-menu-line"></div>
+    </a>
   <a href="./" class="header-logo">
     <svg class="logo-svg">
      <use href="img/sprite.svg#logo-light"></use>
@@ -49,7 +104,12 @@
 
   </div>
   <!-- /.header-phone -->
-  <button class="navbar-button button">Получить Консультацию</button>
+  <button class="navbar-button button">
+    <svg class="button-icon " width="24" height="24">
+      <use href="img/sprite.svg#phone"></use>
+     </svg>
+    <span class="button-text">Получить Консультацию</span>
+  </button>
 
 
 </nav>
