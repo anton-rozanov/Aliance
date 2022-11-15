@@ -46,3 +46,31 @@ mMenuToggle.addEventListener('click',(event) =>{
   // ПОСЛЕ
   menu.classList.contains('is-open') ? closeMenu() : openMenu(); // 1.условие  2. ? - if , 3. : - else
 });
+const swiper = new Swiper('.swiper', { // библиотека 
+  speed: 400,
+  autoHeight: true, 
+  slidesPerView: 1,  // сколько слайдов должно быть
+  //loop: true, // чтобы прокручивались слайды бесконечно
+  navigation: { 
+    nextEl: '.slider-button-next',     // кнопка вперед  
+    prevEl: '.slider-button-prev',     // внопка назад
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    576: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 4,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 5,
+    },
+  },
+});
