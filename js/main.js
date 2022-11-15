@@ -49,7 +49,30 @@ mMenuToggle.addEventListener('click',(event) =>{
   // ПОСЛЕ
   menu.classList.contains('is-open') ? closeMenu() : openMenu(); // 1.условие  2. ? - if , 3. : - else
 });
-const swiper = new Swiper('.swiper', { // библиотека 
+const swiperSteps = new Swiper('.steps-slider',{
+  speed: 400,
+  slidesPerView: 1,
+  navigation: { 
+    nextEl: '.steps-button-next',     // кнопка вперед  
+    prevEl: '.steps-button-prev',     // внопка назад
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    576: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 480px
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 4,
+    },
+  },
+
+});
+const swiper = new Swiper('.features-slider', { // библиотека 
   speed: 400,
   slidesPerView: 1,  // сколько слайдов должно быть
   //loop: true, // чтобы прокручивались слайды бесконечно
