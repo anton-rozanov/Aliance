@@ -51,7 +51,6 @@ mMenuToggle.addEventListener('click',(event) =>{
 });
 const swiper = new Swiper('.swiper', { // библиотека 
   speed: 400,
-  autoHeight: true, 
   slidesPerView: 1,  // сколько слайдов должно быть
   //loop: true, // чтобы прокручивались слайды бесконечно
   navigation: { 
