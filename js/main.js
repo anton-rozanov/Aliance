@@ -99,3 +99,13 @@ const swiper = new Swiper('.features-slider', { // библиотека
     },
   },
 });
+const swiperBlog = new Swiper('.blog-slider', {
+  speed: 400,
+  slidesPerView: 2,
+  spaceBetween: 30,
+  navigation: { 
+    nextEl: '.blog-button-next',     // кнопка вперед  
+    prevEl: '.blog-button-prev',     // внопка назад
+  },
+
+});
